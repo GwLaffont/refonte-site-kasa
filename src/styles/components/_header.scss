@@ -1,0 +1,31 @@
+/* Header Elements*/
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  justify-content: space-between;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    font-size: 24px;
+    font-weight: 500;
+    list-style: none;
+    /* WHich propery to align all items? Baseline not working*/
+
+    a {
+      color: black;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &:visited {
+        color: black;
+      }
+    }
+  }
+}
