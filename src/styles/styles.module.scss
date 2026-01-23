@@ -1,10 +1,12 @@
-@use "../styles/components/header";
 @use "../styles/components/reset";
 
 /* Main Body Settings*/
 
 body {
-  padding: 50px 100px 0px 100px;
+  padding: 20px 0px 0px 0px;
   background-color: white;
   font-family: "Montserrat", sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }

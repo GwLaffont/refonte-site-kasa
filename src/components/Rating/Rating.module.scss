@@ -1,0 +1,9 @@
+.rating {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  img {
+    height: 36px;
+    width: 36px;
+  }
+}

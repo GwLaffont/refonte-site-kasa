@@ -1,0 +1,21 @@
+/*card container section*/
+
+.cardContainer {
+  margin: auto;
+  width: 1200px;
+  height: 810px;
+  padding: 50px 20px 50px 20px;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  row-gap: 50px;
+  overflow-y: scroll;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  &::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+}

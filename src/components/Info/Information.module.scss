@@ -1,0 +1,14 @@
+.columnWrap {
+  width: 1240px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .columnRight {
+    margin: 40px 0px 40px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 40px;
+  }
+}

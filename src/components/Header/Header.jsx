@@ -1,20 +1,20 @@
-import Logo from "../assets/Logo_Desktop.png";
-import "../styles/styles.css";
+import Logo from "../../assets/Logo_Desktop.png";
+import styles from "./Header.module.scss";
 
 function Header() {
   return (
-    <header className="header">
+    <header className={styles.header}>
       <div className="logo">
         <img src={Logo} alt="Logo Kasa" />
       </div>
       <ul className="nav">
         <li>
-          <a href="#" className="nav-link">
+          <a href="/dashboard" className={styles.navLink}>
             Accueil
           </a>
         </li>
         <li>
-          <a href="#" className="nav-link">
+          <a href="/about" className={styles.navLink}>
             A propos
           </a>
         </li>

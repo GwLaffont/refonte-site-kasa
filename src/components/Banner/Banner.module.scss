@@ -1,0 +1,36 @@
+/*Banner Styling*/
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+
+  .bannerMessage {
+    display: flex;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    color: white;
+    z-index: 4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
+
+  img {
+    display: flex;
+    height: 224px;
+    width: 1240px;
+    margin: auto;
+    filter: brightness(50%);
+    z-index: 3;
+    border-radius: 20px;
+    object-fit: cover;
+    overflow: hidden;
+  }
+}
