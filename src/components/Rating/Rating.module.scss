@@ -1,9 +1,20 @@
-.rating {
+.ratingWrap {
   display: flex;
-  flex-direction: row;
-  column-gap: 20px;
+  position: relative;
   img {
     height: 36px;
     width: 36px;
+  }
+  .ratingBase {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+  }
+
+  .rating {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
   }
 }

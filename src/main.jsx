@@ -1,6 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState } from "react";
 import "./styles/styles.module.scss";
 import App from "./pages/App";
 import Logements from "./pages/Logements";
@@ -12,11 +13,12 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/dashboard" element={<App />} />
+        <Route path="/" element={<App />} />
         <Route path="/logements" element={<Logements />} />
-        <Route path="/error" element={<Error />} />
         <Route path="/about" element={<About />} />
         <Route path="/testpage" element={<PageTest />} />
+        {/* Wildcard route: Catch all for everything else. MUST be the last route */}
+        <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,

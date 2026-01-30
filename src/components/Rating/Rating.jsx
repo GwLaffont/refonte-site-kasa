@@ -4,12 +4,18 @@ import OrangeStar from "../../assets/Star2.svg";
 
 function Host() {
   return (
-    <div className={styles.rating}>
-      <img src={OrangeStar} alt="Previous Work" />
-      <img src={OrangeStar} alt="Previous Work" />
-      <img src={OrangeStar} alt="Previous Work" />
-      <img src={GreyStar} alt="Previous Work" />
-      <img src={GreyStar} alt="Previous Work" />
+    <div className={styles.ratingWrap}>
+      <div className={styles.ratingBase}>
+        <img src={GreyStar} alt="Star" />
+        <img src={GreyStar} alt="Star" />
+        <img src={GreyStar} alt="Star" />
+        <img src={GreyStar} alt="Star" />
+        <img src={GreyStar} alt="Star" />
+      </div>
+      <div className={styles.rating}>
+        <img src={OrangeStar} alt="Star" />
+        <img src={OrangeStar} alt="Star" />
+      </div>
     </div>
   );
 }

@@ -1,12 +1,14 @@
 import styles from "./Card.module.scss";
 
-function Card() {
+function Card({ cover, title }) {
   return (
     <section className={styles.card}>
-      <div className={styles.cardContentTest}></div>
-      <p className={styles.cardTitle}>Titre de la location</p>
+      <img src={cover} alt={title} />
+      <p className={styles.cardTitle}>{title}</p>
     </section>
   );
 }
 
 export default Card;
+
+//      <div className={styles.cardContentTest}></div>

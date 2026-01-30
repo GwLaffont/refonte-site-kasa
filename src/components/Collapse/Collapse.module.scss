@@ -20,9 +20,14 @@
     img {
       height: 14px;
       width: 24px;
+      transition: transform 0.3s ease;
 
       &:hover {
         cursor: pointer;
+      }
+
+      &.rotated {
+        transform: rotate(-180deg);
       }
     }
   }
@@ -30,5 +35,14 @@
   .collapseMessage {
     background-color: rgba(0, 0, 0, 0.01);
     padding: 15px;
+    transition:
+      max-height 0.3s ease-out,
+      padding 0.3s ease;
+    max-height: 1000px;
+
+    &.hidden {
+      max-height: 0;
+      padding: 0;
+    }
   }
 }

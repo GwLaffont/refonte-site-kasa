@@ -9,6 +9,27 @@
   margin: auto;
   margin-bottom: 0px;
   margin-top: 0px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    z-index: 3;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(10, 10, 10, 0) 42%,
+      rgba(4, 4, 4, 0.205) 99.99%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+  }
 
   .cardTitle {
     position: absolute;
@@ -23,31 +44,14 @@
     line-height: 25px;
   }
 
-  .cardContentTest {
-    background-color: orangered;
+  img {
     width: 340px;
     height: 340px;
     border-radius: 10px;
     overflow: hidden;
+    object-fit: cover;
     display: flex;
     position: relative;
     z-index: 2;
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      display: flex;
-      z-index: 3;
-      background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(10, 10, 10, 0) 42%,
-        rgba(4, 4, 4, 0.205) 99.99%,
-        rgba(0, 0, 0, 0.5) 100%
-      );
-    }
   }
 }

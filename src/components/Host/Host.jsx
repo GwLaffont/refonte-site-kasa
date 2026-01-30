@@ -1,10 +1,10 @@
 import styles from "./Host.module.scss";
 
-function Host() {
+function Host({ name, picture }) {
   return (
     <div className={styles.host}>
-      <div className={styles.hostName}>Firstname Lastname</div>
-      <div className={styles.hostPic}></div>
+      <div className={styles.hostName}> {name} </div>
+      <img src={picture} alt={name} className={styles.hostPic} />
     </div>
   );
 }
