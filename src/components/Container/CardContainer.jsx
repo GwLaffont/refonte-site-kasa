@@ -6,7 +6,12 @@ function CardContainer() {
   return (
     <section className={styles.cardContainer}>
       {data.map((house) => (
-        <Card key={house.id} cover={house.cover} title={house.title} />
+        <Card
+          key={house.id}
+          id={house.id}
+          cover={house.cover}
+          title={house.title}
+        />
       ))}
     </section>
   );

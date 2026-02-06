@@ -1,11 +1,11 @@
 const bannerData = [
   {
-    cover: "../assets/BannerImg.png",
+    cover: "../../public/images/BannerImg.png",
     description: "Falaises rocheuses à côté de la mer",
     message: "Chez vous, partout et ailleurs",
   },
   {
-    cover: "../assets/BannerImg2.png",
+    cover: "../../public/images/BannerImg2.png",
     description: "Vallée montagneuse emboisée",
     message: "",
   },

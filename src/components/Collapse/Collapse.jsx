@@ -20,13 +20,11 @@ function Collapse({ title, content }) {
           className={isVisible ? styles.rotated : ""}
         />
       </div>
-      {isVisible && (
-        <div
-          className={`${styles.collapseMessage} ${!isVisible ? styles.hidden : ""}`}
-        >
-          {content}
-        </div>
-      )}
+      <div
+        className={`${styles.collapseMessage} ${!isVisible ? styles.hidden : ""}`}
+      >
+        {isVisible && content}
+      </div>
     </div>
   );
 }

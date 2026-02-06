@@ -5,29 +5,43 @@
   .carouselPic {
     border-radius: 25px;
     overflow: hidden;
+    position: relative;
+    z-index: 10;
 
     img {
       width: 1240px;
       height: 415px;
       object-fit: cover;
     }
+
+    .carouselCounter {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      color: white;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 14px;
+      z-index: 12;
+    }
+  }
+
+  .arrowLeft,
+  .arrowRight {
+    z-index: 12;
+    width: 46px;
+    height: 80px;
+    position: absolute;
+    top: 167px;
+    cursor: pointer;
   }
 
   .arrowLeft {
-    width: 46px;
-    height: 80px;
-    position: absolute;
     left: 40px;
-    top: 167px;
-    cursor: pointer;
   }
 
   .arrowRight {
-    width: 46px;
-    height: 80px;
-    position: absolute;
     right: 40px;
-    top: 167px;
-    cursor: pointer;
   }
 }

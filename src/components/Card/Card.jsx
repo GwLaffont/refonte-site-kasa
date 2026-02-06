@@ -1,14 +1,15 @@
+import { Link } from "react-router-dom";
 import styles from "./Card.module.scss";
 
-function Card({ cover, title }) {
+function Card({ id, cover, title }) {
   return (
-    <section className={styles.card}>
-      <img src={cover} alt={title} />
-      <p className={styles.cardTitle}>{title}</p>
-    </section>
+    <Link to={`/pages/${id}`} className={styles.cardLink}>
+      <section className={styles.card}>
+        <img src={cover} alt={title} />
+        <p className={styles.cardTitle}>{title}</p>
+      </section>
+    </Link>
   );
 }
 
 export default Card;
-
-//      <div className={styles.cardContentTest}></div>
