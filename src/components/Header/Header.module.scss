@@ -4,6 +4,7 @@
   flex-direction: row;
   background-color: white;
   justify-content: space-between;
+  align-items: center;
   vertical-align: middle;
   margin: auto;
   margin-bottom: 30px;
@@ -30,6 +31,26 @@
       &:visited {
         color: black;
       }
+    }
+  }
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 600px) {
+  .header {
+    width: 335px;
+    ul {
+      column-gap: 20px;
+      li {
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+    }
+
+    img {
+      width: 145px;
+      height: 46px;
     }
   }
 }

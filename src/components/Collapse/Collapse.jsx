@@ -23,7 +23,19 @@ function Collapse({ title, content }) {
       <div
         className={`${styles.collapseMessage} ${!isVisible ? styles.hidden : ""}`}
       >
-        {isVisible && content}
+        {/* Checks if content is an array */}
+        {/* If content is an array, map over the items and render a list */}
+        {/* If content is not an array, render content*/}
+        {isVisible &&
+          (Array.isArray(content) ? (
+            <ul>
+              {content.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          ) : (
+            content
+          ))}
       </div>
     </div>
   );

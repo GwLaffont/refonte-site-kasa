@@ -8,16 +8,14 @@
     height: 36px;
     width: 36px;
   }
-  .ratingBase {
-    display: flex;
-    flex-direction: row;
-    column-gap: 20px;
-  }
+}
 
-  .rating {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    column-gap: 20px;
+@media only screen and (max-width: 600px) {
+  .ratingWrap {
+    column-gap: 10px;
+    img {
+      width: 18px;
+      height: 18px;
+    }
   }
 }

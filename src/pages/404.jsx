@@ -10,7 +10,8 @@ function Error() {
       <div className={styles.errorMain}>
         <h1 className={styles.errorMessage}>404</h1>
         <h2 className={styles.errorMessage}>
-          Oups! La page que vous demandez n'existe pas.
+          <span>Oups! La page que </span>
+          <span>vous demandez n'existe pas.</span>
         </h2>
         <div className={styles.return}>
           <Link to="/">Retourner sur la page d'accueil</Link>

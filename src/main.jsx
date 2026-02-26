@@ -16,6 +16,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/about" element={<About />} />
         {/* Dynamic route that accepts the 'id' parameter */}
         <Route path="/pages/:id" element={<Pages />} />
+        <Route path="/error" element={<Error />} />
         {/* Wildcard route: Catch all for everything else. MUST be the last route */}
         <Route path="*" element={<Error />} />
       </Routes>

@@ -1,9 +1,9 @@
-import styles from "./Carousel.module.scss";
+import styles from "./Slideshow.module.scss";
 import ArrowLeft from "../../assets/Arrow_Left.svg";
 import ArrowRight from "../../assets/Arrow_Right.svg";
 import { useState } from "react";
 
-function Carousel({ pictures }) {
+function Slideshow({ pictures }) {
   //console.log("test");
   //console.log(pictures);
   // If no pictures, return null
@@ -61,4 +61,4 @@ function Carousel({ pictures }) {
   );
 }
 
-export default Carousel;
+export default Slideshow;

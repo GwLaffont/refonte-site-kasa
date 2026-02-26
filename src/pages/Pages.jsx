@@ -1,10 +1,10 @@
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
-import Carousel from "../components/Carousel/Carousel";
+import Slideshow from "../components/Carousel/Slideshow";
 import Information from "../components/Info/Information";
 import Collapse from "../components/Collapse/Collapse";
 import styles from "../styles/components/pagecontents.module.scss";
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import { data } from "../data/data";
 
 function Pages() {
@@ -13,17 +13,17 @@ function Pages() {
 
   // Handle case where selectedHouse is not found
   if (!selectedHouse) {
-    return <div>Loading or not found...</div>;
+    return <Navigate to="/error" />;
   }
 
   return (
     <>
       <Header />
       <main>
-        <Carousel pictures={selectedHouse.pictures} />
+        <Slideshow pictures={selectedHouse.pictures} />
         <Information
           title={selectedHouse.title}
-          description={selectedHouse.description}
+          location={selectedHouse.location}
           tags={selectedHouse.tags}
           host={selectedHouse.host}
           rating={selectedHouse.rating}
@@ -33,10 +33,7 @@ function Pages() {
             <Collapse title="Description" content={selectedHouse.description} />
           </div>
           <div className={styles.collapseHold}>
-            <Collapse
-              title="Équipements"
-              content={selectedHouse.equipments.join(", ")}
-            />
+            <Collapse title="Équipements" content={selectedHouse.equipments} />
           </div>
         </div>
       </main>

@@ -17,3 +17,16 @@
     background-color: #c4c4c4;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .host {
+    .hostName {
+      font-size: 12px;
+      width: 75px;
+    }
+    .hostPic {
+      height: 32px;
+      width: 32px;
+    }
+  }
+}

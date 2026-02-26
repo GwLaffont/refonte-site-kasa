@@ -12,3 +12,21 @@ main {
     width: 582px;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  main {
+    width: 375px;
+  }
+  .collapseWrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 335px;
+    margin: auto;
+    margin-bottom: 20px;
+
+    .collapseHold {
+      width: 335px;
+    }
+  }
+}

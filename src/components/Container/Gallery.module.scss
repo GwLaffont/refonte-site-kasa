@@ -3,7 +3,7 @@
 .cardContainer {
   margin: auto;
   width: 1200px;
-  height: 810px;
+  height: 729px;
   padding: 50px 20px 50px 20px;
   background-color: #f6f6f6;
   border-radius: 20px;
@@ -17,5 +17,18 @@
   -ms-overflow-style: none; /* For Internet Explorer and Edge */
   &::-webkit-scrollbar {
     display: none; /* For Chrome, Safari, and Opera */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cardContainer {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    background-color: white;
+    padding: 20px;
+    row-gap: 20px;
   }
 }

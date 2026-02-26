@@ -34,7 +34,8 @@
 
   .collapseMessage {
     background-color: rgba(0, 0, 0, 0.01);
-    padding: 15px;
+    padding: 15px 0px 15px 0px;
+    margin: 0px 15px 0px 15px;
     transition:
       max-height 0.3s ease-out,
       padding 0.3s ease;
@@ -43,6 +44,23 @@
     &.hidden {
       max-height: 0;
       padding: 0;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .collapse {
+    .collapseTitle {
+      font-size: 13px !important;
+    }
+
+    .collapseMessage {
+      font-size: 12px;
     }
   }
 }

@@ -1,8 +1,8 @@
-import styles from "./Container.module.scss";
+import styles from "./Gallery.module.scss";
 import Card from "../Card/Card";
 import { data } from "../../data/data";
 
-function CardContainer() {
+function Gallery() {
   return (
     <section className={styles.cardContainer}>
       {data.map((house) => (
@@ -17,4 +17,4 @@ function CardContainer() {
   );
 }
 
-export default CardContainer;
+export default Gallery;
